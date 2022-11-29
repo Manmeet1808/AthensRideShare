@@ -52,6 +52,7 @@ public class LoginActivity extends AppCompatActivity {
             String userEmail = enterEmail.getText().toString();
             String userPassword = enterPassword.getText().toString();
             signIn(userEmail, userPassword);
+
         }
     }
 
@@ -74,8 +75,9 @@ public class LoginActivity extends AppCompatActivity {
 
     public void updateUserInfo(FirebaseUser userAccount) {
         if (userAccount != null) {
-            Toast.makeText(this, "Welcome Back!", Toast.LENGTH_LONG).show();
-            //startActivity(new Intent(this, )); //redirect to nav activity
+            //Toast.makeText(this, "Welcome Back!", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this, homeScreen.class);
+            startActivity(intent);
         } else {
             Toast.makeText(this,"User Email or Password is Incorrect",Toast.LENGTH_LONG).show();
         }
