@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AthensRideShare</string>
+    <string name="open_d">Open the navigation drawer</string>
+    <string name="close_d">Close the navigation drawer</string>
 </resources>
