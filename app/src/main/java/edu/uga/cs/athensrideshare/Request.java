@@ -95,6 +95,6 @@ public class Request {
     public void setFuel(String fuel ) {this.fuel = fuel;}
 
     public String toString() {return name + " " + age + " " + number + " " + startingLoc + " "
-    + destination + " " + date + " " + time + " " + seatsNeed;}
+    + destination + " " + date + " " + time + " " + seatsNeed + " " + social + " " + fuel;}
 
 }
