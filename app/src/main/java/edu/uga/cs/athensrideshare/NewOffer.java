@@ -1,6 +1,7 @@
 package edu.uga.cs.athensrideshare;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -103,6 +104,18 @@ public class NewOffer extends AppCompatActivity {
                         }
                     });
         }
+    }
+
+    @Override
+    protected void onResume() {
+        Log.d( DEBUG_TAG, "NewOffer.onResume()" );
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        Log.d( DEBUG_TAG, "NewOffer.onPause()" );
+        super.onPause();
     }
 
 

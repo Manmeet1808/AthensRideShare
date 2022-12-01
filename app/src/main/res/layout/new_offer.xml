@@ -18,24 +18,9 @@
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/phoneText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/phoneText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:hint="Enter Phone Number (xxx-xxx-xxxx)"
-        android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/ageText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameText" />
 
     <EditText
         android:id="@+id/ageText"
@@ -48,7 +33,7 @@
         android:inputType="textUri"
         app:layout_constraintBottom_toTopOf="@+id/meetingText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phoneText" />
 
@@ -62,7 +47,7 @@
         android:hint="Meeting point (Full Address)"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ageText" />
 
@@ -76,6 +61,7 @@
         android:hint="Destination (City, State)"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="240dp" />
 
@@ -89,21 +75,9 @@
         android:hint="Enter date"
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="285dp" />
-
-    <EditText
-        android:id="@+id/timeText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:hint="Enter Time"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="330dp" />
 
     <EditText
         android:id="@+id/seatsText"
@@ -120,6 +94,20 @@
         tools:layout_editor_absoluteY="375dp" />
 
     <EditText
+        android:id="@+id/timeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Enter Time"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <EditText
         android:id="@+id/socialText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -132,6 +120,21 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="420dp" />
+
+    <EditText
+        android:id="@+id/phoneText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Enter Phone Number (xxx-xxx-xxxx)"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/ageText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
 
     <Button
         android:id="@+id/button"
